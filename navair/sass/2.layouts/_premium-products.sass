@@ -1,0 +1,90 @@
+#premium-products
+  background: $off-primary
+
+  .col-md-5
+    margin-bottom: 3rem
+
+  .premium-item
+    position: relative
+    
+    .card
+      +flex(row, center, center)
+      margin-top: 0
+      border-top: none
+      max-width: 100%
+      &:hover
+        +transform(scale(1))
+        border: none
+      .item
+        border: 1px solid $gray-5
+        align-self: stretch
+        padding: 0.5rem
+        flex-basis: 33.333333%
+
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6)
+          padding-bottom: 4rem
+
+        +bp(md)
+          flex-basis: 50%
+          &:nth-child(4)
+            padding-bottom: 1rem
+        +bp(lg)
+          flex-basis: 33.333333%
+
+        h6
+          text-align: center
+          margin-top: 0.5rem
+
+        img
+          height: 100px
+          padding: 1rem
+
+    .btn
+      position: absolute
+      right: 0
+      bottom: -1.5rem
+      &:hover
+        background: $off-primary
+        color: $black
+        border-color: $black
+
+  .col-lg-4
+    padding-right: 0
+
+    .card-body
+      padding-top: 1rem
+
+    h4
+      font-size: 1.3rem
+
+    .btn
+      font-size: 0.8rem
+      padding-left: 0.5rem
+      padding-right: 0.5rem
+      color: $primary
+      &:hover
+        text-decoration: underline
+
+  .col-md-7
+    .card
+      margin-bottom: 0
+      .card-img
+        height: 130px
+
+      #pd1
+        background: url(../img/premiumdoors/pd1.jpg)
+
+      #pd2
+        background: url(../img/premiumdoors/pd2.jpg)
+
+      #pd3
+        background: url(../img/premiumdoors/pd3.jpg)
+        
+      #pd1, #pd2, #pd3
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+
+      

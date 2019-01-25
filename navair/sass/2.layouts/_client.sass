@@ -1,0 +1,45 @@
+#client
+  background: $off-primary
+  position: relative
+  overflow: auto
+
+  .row
+    justify-content: center
+    margin: 0 auto
+
+    .client-item
+      margin: 0 1rem
+      img
+        height: 70px
+        width: auto
+        margin-bottom: 1rem
+      &:last-child img
+        margin-bottom: 0
+
+  .prev-next
+    width: 100%
+    +center(y)
+    z-index: 9999
+
+    .prev,
+    .next
+      padding: 1rem 1rem
+      color: $gray-7
+      display: inline-block
+      position: relative
+      border-radius: 2px
+      cursor: pointer
+      +transition(fast)
+      i
+        +center
+        font-size: 1.5rem
+
+      &:hover
+        background: $gray-7
+        color: $white
+    .prev
+      left: 1rem
+    .next
+      right: 1rem
+      position: absolute
+    

@@ -1,0 +1,68 @@
+footer
+  color: $white
+  text-align: center
+  a
+    color: $gray-4
+    font-size: 0.8rem
+    &:hover
+      text-decoration: underline
+      color: $white
+  
+.footer-top
+  background: $black
+  color: $white
+  padding: 2rem 0
+  img
+    width: 200px
+    margin-bottom: 1.5rem
+
+  h6
+    text-transform: uppercase
+    color: $primary
+    font-size: 0.9rem
+    margin: 0
+
+  .quick-links,
+  .footer-products
+    margin-bottom: 1.5rem
+    a
+      padding: 0 0.7rem
+
+  .quick-links,
+  .quick-links ul,
+  .footer-products,
+  .footer-products ul,
+  .contact-info .address,
+  .contact-info .contact,
+  .contact-info .contact > div,
+  .social-m ul
+    +flex(row, center, center)
+
+  .contact-info
+    margin-bottom: 1.5rem
+    .address
+      margin-bottom: 1rem
+      h6 + span
+        font-size: 0.8rem
+    .contact
+      & > div
+        padding: 0.2rem 1rem
+
+    .add-text
+      padding-left: 5px
+
+  .social-m
+    ul li 
+      margin: 0 0.3rem
+      a
+        padding: 0.7rem 1rem
+        background: $gray-8
+        display: block
+        position: relative
+        border-radius: 5px
+        &:hover
+          background: $primary
+
+.footer-bottom
+  background: $gray-8
+  padding: 0.5rem 0

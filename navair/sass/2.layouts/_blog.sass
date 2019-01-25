@@ -1,0 +1,100 @@
+#blog
+  position: relative
+  overflow: hidden
+
+  .section-head
+    text-align: center
+    margin-bottom: 2rem
+
+  .card
+    
+    .card-img
+      position: relative
+      min-height: 300px
+      +bp(md)
+        min-height: 250px
+
+      .date
+        position: absolute
+        bottom: 0rem
+        right: 0rem
+        color: $white
+        background: $primary
+        padding: 0.5rem
+        vertical-align: middle
+        .day
+          font-size: 1.8rem
+          font-weight: 700
+          float: left
+        .month-year
+          float: right
+          margin-left: 0.2rem
+          margin-top: 0.2rem
+        .day,.month,.year
+          line-height: 1
+        .month,.year
+          display: block
+          font-size: 0.8rem
+        .month
+          text-transform: uppercase
+
+    .card-body
+      padding: 1rem
+      background: $off-primary
+      text-align: left
+      .blog-desc
+        font-size: 0.8rem
+        margin-top: 1rem
+        a
+          color: primary
+          &:hover
+            text-decoration: underline
+
+    #b1
+      background: url(../img/blog/b1.jpg)
+
+    #b2
+      background: url(../img/blog/b2.jpg)
+
+    #b3
+      background: url(../img/blog/b3.jpg)
+
+
+    #b1, #b2, #b3
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+
+  .prev-next
+    padding: 0 1rem
+    width: 100%
+    +center(y)
+    display: none
+    +bp(md)
+      display: block
+
+    .prev,
+    .next
+      padding: 1.3rem 1.5rem
+      color: $white
+      background: $gray-7
+      display: inline-block
+      position: relative
+      border-radius: 2px
+      cursor: pointer
+      +transition(fast)
+      i
+        +center
+        font-size: 1.5rem
+
+      &:hover
+        background: $primary
+
+    .next
+      right: 1rem
+      position: absolute
+
+  .btn
+    position: relative
+    left: 50%
+    +transform(translateX(-50%))
